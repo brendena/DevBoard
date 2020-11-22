@@ -1,0 +1,44 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 3.5mmStereoJack
+#
+DEF 3.5mmStereoJack J 0 40 Y Y 1 F N
+F0 "J" -50 600 50 H V C CNN
+F1 "3.5mmStereoJack" 0 450 50 H V C CNN
+F2 "" -50 600 50 H I C CNN
+F3 "" -50 600 50 H I C CNN
+DRAW
+S -450 -400 400 -400 0 1 0 N
+S -450 -400 400 350 0 1 0 N
+S 400 -400 400 350 0 1 0 N
+S 400 350 -450 350 0 1 0 N
+X ExtraLeftChannel ~ -50 -500 100 U 50 50 1 1 B
+X ExtraRightChannel ~ 150 -500 100 U 50 50 1 1 B
+X GND ~ -350 -500 100 U 50 50 1 1 I
+X LeftChannel ~ -200 -500 100 U 50 50 1 1 B
+X RightChannel ~ 300 -500 100 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# 6.35mmMonoAudioJack
+#
+DEF 6.35mmMonoAudioJack J 0 40 Y Y 1 F N
+F0 "J" -150 450 50 H V C CNN
+F1 "6.35mmMonoAudioJack" -50 350 50 H V C CNN
+F2 "" -150 450 50 H I C CNN
+F3 "" -150 450 50 H I C CNN
+DRAW
+C -200 250 0 0 1 0 N
+S -150 -300 150 -300 0 1 0 N
+S -150 250 -150 -300 0 1 0 N
+S -150 250 150 250 0 1 0 N
+S 150 -300 150 250 0 1 0 N
+X gnd 1 -50 -400 100 U 50 50 1 1 I
+X signal 2 50 -400 100 U 50 50 1 1 O
+X nc 3 250 100 100 L 50 50 1 1 N
+X nc 4 -250 100 100 R 50 50 1 1 N
+ENDDRAW
+ENDDEF
+#
+#End Library
