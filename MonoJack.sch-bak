@@ -1,0 +1,124 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 14
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NewSymbols:6.35mmMonoAudioJack J?
+U 1 1 5FC1DE1B
+P 4150 3200
+AR Path="/5FBCFD33/5FC1DA06/5FC1DE1B" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC22BEB/5FC1DE1B" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC22EFE/5FC1DE1B" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC22F36/5FC1DE1B" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC22FFE/5FC1DE1B" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC230D2/5FC1DE1B" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC231A0/5FC1DE1B" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC24696/5FC1DE1B" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC24699/5FC1DE1B" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC2469C/5FC1DE1B" Ref="J?"  Part="1" 
+AR Path="/5FC42267/5FC5ED5A/5FC1DE1B" Ref="J?"  Part="1" 
+AR Path="/5FC42267/5FC5ED5D/5FC1DE1B" Ref="J?"  Part="1" 
+AR Path="/5FC42267/5FC5ED60/5FC1DE1B" Ref="J?"  Part="1" 
+F 0 "J?" H 4150 3615 50  0000 C CNN
+F 1 "6.35mmMonoAudioJack" H 4150 3524 50  0000 C CNN
+F 2 "" H 4000 3650 50  0001 C CNN
+F 3 "" H 4000 3650 50  0001 C CNN
+	1    4150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4150 3900 4350
+Text HLabel 4200 4350 3    50   Input ~ 0
+A_Signal
+Wire Wire Line
+	4200 4350 4200 4150
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5FC1F9CC
+P 4550 3400
+AR Path="/5FBCFD33/5FC1DA06/5FC1F9CC" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC22BEB/5FC1F9CC" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC22EFE/5FC1F9CC" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC22F36/5FC1F9CC" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC22FFE/5FC1F9CC" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC230D2/5FC1F9CC" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC231A0/5FC1F9CC" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC24696/5FC1F9CC" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC24699/5FC1F9CC" Ref="J?"  Part="1" 
+AR Path="/5FBCFD33/5FC2469C/5FC1F9CC" Ref="J?"  Part="1" 
+AR Path="/5FC42267/5FC5ED5A/5FC1F9CC" Ref="J?"  Part="1" 
+AR Path="/5FC42267/5FC5ED5D/5FC1F9CC" Ref="J?"  Part="1" 
+AR Path="/5FC42267/5FC5ED60/5FC1F9CC" Ref="J?"  Part="1" 
+F 0 "J?" V 4488 3212 50  0000 R CNN
+F 1 "Conn_01x02_Female" V 4397 3212 50  0000 R CNN
+F 2 "" H 4550 3400 50  0001 C CNN
+F 3 "~" H 4550 3400 50  0001 C CNN
+	1    4550 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FC215E5
+P 4050 4150
+AR Path="/5FBCFD33/5FC1DA06/5FC215E5" Ref="R?"  Part="1" 
+AR Path="/5FBCFD33/5FC22BEB/5FC215E5" Ref="R?"  Part="1" 
+AR Path="/5FBCFD33/5FC22EFE/5FC215E5" Ref="R?"  Part="1" 
+AR Path="/5FBCFD33/5FC22F36/5FC215E5" Ref="R?"  Part="1" 
+AR Path="/5FBCFD33/5FC22FFE/5FC215E5" Ref="R?"  Part="1" 
+AR Path="/5FBCFD33/5FC230D2/5FC215E5" Ref="R?"  Part="1" 
+AR Path="/5FBCFD33/5FC231A0/5FC215E5" Ref="R?"  Part="1" 
+AR Path="/5FBCFD33/5FC24696/5FC215E5" Ref="R?"  Part="1" 
+AR Path="/5FBCFD33/5FC24699/5FC215E5" Ref="R?"  Part="1" 
+AR Path="/5FBCFD33/5FC2469C/5FC215E5" Ref="R?"  Part="1" 
+AR Path="/5FC42267/5FC5ED5A/5FC215E5" Ref="R?"  Part="1" 
+AR Path="/5FC42267/5FC5ED5D/5FC215E5" Ref="R?"  Part="1" 
+AR Path="/5FC42267/5FC5ED60/5FC215E5" Ref="R?"  Part="1" 
+F 0 "R?" V 3843 4150 50  0000 C CNN
+F 1 "optional R" V 3934 4150 50  0000 C CNN
+F 2 "" V 3980 4150 50  0001 C CNN
+F 3 "~" H 4050 4150 50  0001 C CNN
+	1    4050 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 3600 4100 3750
+Wire Wire Line
+	4100 3750 3900 3750
+Wire Wire Line
+	3900 3750 3900 4150
+Connection ~ 3900 4150
+Wire Wire Line
+	4200 3600 4200 4150
+Connection ~ 4200 4150
+Wire Wire Line
+	4550 3600 4550 3750
+Wire Wire Line
+	4550 3750 4100 3750
+Connection ~ 4100 3750
+Wire Wire Line
+	4650 3600 4650 4150
+Wire Wire Line
+	4650 4150 4200 4150
+$Comp
+L power:GND #PWR?
+U 1 1 5FBEFFFB
+P 3900 4350
+F 0 "#PWR?" H 3900 4100 50  0001 C CNN
+F 1 "GND" H 3905 4177 50  0000 C CNN
+F 2 "" H 3900 4350 50  0001 C CNN
+F 3 "" H 3900 4350 50  0001 C CNN
+	1    3900 4350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
