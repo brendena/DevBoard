@@ -13,11 +13,11 @@ S -450 -400 400 -400 0 1 0 N
 S -450 -400 400 350 0 1 0 N
 S 400 -400 400 350 0 1 0 N
 S 400 350 -450 350 0 1 0 N
-X ExtraLeftChannel ~ -50 -500 100 U 50 50 1 1 B
-X ExtraRightChannel ~ 150 -500 100 U 50 50 1 1 B
-X GND ~ -350 -500 100 U 50 50 1 1 I
-X LeftChannel ~ -200 -500 100 U 50 50 1 1 B
-X RightChannel ~ 300 -500 100 U 50 50 1 1 B
+X GND 1 -350 -500 100 U 50 50 1 1 I
+X LeftChannel 2 -200 -500 100 U 50 50 1 1 B
+X ExtraLeftChannel 3 -50 -500 100 U 50 50 1 1 B
+X ExtraRightChannel 4 150 -500 100 U 50 50 1 1 B
+X RightChannel 5 300 -500 100 U 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #

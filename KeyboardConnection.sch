@@ -18,10 +18,10 @@ Keyboard_CLK
 Text HLabel 3100 3350 0    50   BiDi ~ 0
 Keyboard_Data
 $Comp
-L Connector:DIN-5_180degree J?
+L Connector:DIN-5_180degree J5
 U 1 1 5FC58202
 P 5300 2900
-F 0 "J?" H 5300 2625 50  0000 C CNN
+F 0 "J5" H 5300 2625 50  0000 C CNN
 F 1 "DIN-5_180degree" H 5300 2534 50  0000 C CNN
 F 2 "" H 5300 2900 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 5300 2900 50  0001 C CNN
@@ -29,10 +29,10 @@ F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 5300 2900 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Mini-DIN-6 J?
+L Connector:Mini-DIN-6 J6
 U 1 1 5FC5A9CE
 P 5300 3800
-F 0 "J?" H 5300 4167 50  0000 C CNN
+F 0 "J6" H 5300 4167 50  0000 C CNN
 F 1 "Mini-DIN-6" H 5300 4076 50  0000 C CNN
 F 2 "" H 5300 3800 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 5300 3800 50  0001 C CNN
@@ -2268,23 +2268,23 @@ Connection ~ 4600 3350
 Wire Wire Line
 	4600 3350 4700 3350
 $Comp
-L Device:R R?
+L Device:R R6
 U 1 1 5FC613DE
 P 3450 2800
-F 0 "R?" H 3520 2846 50  0000 L CNN
+F 0 "R6" H 3520 2846 50  0000 L CNN
 F 1 "R" H 3520 2755 50  0000 L CNN
-F 2 "" V 3380 2800 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3380 2800 50  0001 C CNN
 F 3 "~" H 3450 2800 50  0001 C CNN
 	1    3450 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R7
 U 1 1 5FC621F3
 P 3700 2800
-F 0 "R?" H 3770 2846 50  0000 L CNN
+F 0 "R7" H 3770 2846 50  0000 L CNN
 F 1 "R" H 3770 2755 50  0000 L CNN
-F 2 "" V 3630 2800 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3630 2800 50  0001 C CNN
 F 3 "~" H 3700 2800 50  0001 C CNN
 	1    3700 2800
 	1    0    0    -1  
@@ -2311,10 +2311,10 @@ Connection ~ 3450 2550
 Wire Wire Line
 	3450 2550 3450 2500
 $Comp
-L power:GND #PWR?
+L power:GND #PWR019
 U 1 1 5FD05695
 P 5000 2800
-F 0 "#PWR?" H 5000 2550 50  0001 C CNN
+F 0 "#PWR019" H 5000 2550 50  0001 C CNN
 F 1 "GND" V 5005 2672 50  0000 R CNN
 F 2 "" H 5000 2800 50  0001 C CNN
 F 3 "" H 5000 2800 50  0001 C CNN
@@ -2322,10 +2322,10 @@ F 3 "" H 5000 2800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR020
 U 1 1 5FD05B03
 P 5600 3800
-F 0 "#PWR?" H 5600 3550 50  0001 C CNN
+F 0 "#PWR020" H 5600 3550 50  0001 C CNN
 F 1 "GND" V 5605 3672 50  0000 R CNN
 F 2 "" H 5600 3800 50  0001 C CNN
 F 3 "" H 5600 3800 50  0001 C CNN

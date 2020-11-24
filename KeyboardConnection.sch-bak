@@ -2243,10 +2243,6 @@ Text GLabel 5600 2800 2    50   Input ~ 0
 G_5V
 Text GLabel 5000 3800 0    50   Input ~ 0
 G_5V
-Text GLabel 5000 2800 0    50   Input ~ 0
-G_GND
-Text GLabel 5600 3800 2    50   Input ~ 0
-G_GND
 Wire Wire Line
 	3100 3100 5000 3100
 Wire Wire Line
@@ -2314,4 +2310,26 @@ Wire Wire Line
 Connection ~ 3450 2550
 Wire Wire Line
 	3450 2550 3450 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5FD05695
+P 5000 2800
+F 0 "#PWR?" H 5000 2550 50  0001 C CNN
+F 1 "GND" V 5005 2672 50  0000 R CNN
+F 2 "" H 5000 2800 50  0001 C CNN
+F 3 "" H 5000 2800 50  0001 C CNN
+	1    5000 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD05B03
+P 5600 3800
+F 0 "#PWR?" H 5600 3550 50  0001 C CNN
+F 1 "GND" V 5605 3672 50  0000 R CNN
+F 2 "" H 5600 3800 50  0001 C CNN
+F 3 "" H 5600 3800 50  0001 C CNN
+	1    5600 3800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
