@@ -727,8 +727,8 @@ L Connector:DIN-5_180degree J4
 U 1 1 5FC1977D
 P 9650 3550
 F 0 "J4" H 9650 3275 50  0000 C CNN
-F 1 "DIN-5_180degree" H 9650 3184 50  0000 C CNN
-F 2 "" H 9650 3550 50  0001 C CNN
+F 1 "MIDI_TX_Out" H 9650 3184 50  0000 C CNN
+F 2 "LocalFootPrints:DIN5_midi" H 9650 3550 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 9650 3550 50  0001 C CNN
 	1    9650 3550
 	1    0    0    -1  

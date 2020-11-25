@@ -22,8 +22,8 @@ L Connector:DIN-5_180degree J5
 U 1 1 5FC58202
 P 5300 2900
 F 0 "J5" H 5300 2625 50  0000 C CNN
-F 1 "DIN-5_180degree" H 5300 2534 50  0000 C CNN
-F 2 "" H 5300 2900 50  0001 C CNN
+F 1 "KeyboadDin5" H 5300 2534 50  0000 C CNN
+F 2 "LocalFootPrints:DIN5_midi" H 5300 2900 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 5300 2900 50  0001 C CNN
 	1    5300 2900
 	1    0    0    -1  
@@ -33,8 +33,8 @@ L Connector:Mini-DIN-6 J6
 U 1 1 5FC5A9CE
 P 5300 3800
 F 0 "J6" H 5300 4167 50  0000 C CNN
-F 1 "Mini-DIN-6" H 5300 4076 50  0000 C CNN
-F 2 "" H 5300 3800 50  0001 C CNN
+F 1 "KeyboardMiniDin6" H 5300 4076 50  0000 C CNN
+F 2 "LocalFootPrints:MiniDin6" H 5300 3800 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 5300 3800 50  0001 C CNN
 	1    5300 3800
 	1    0    0    -1  
@@ -2244,7 +2244,7 @@ G_5V
 Text GLabel 5000 3800 0    50   Input ~ 0
 G_5V
 Wire Wire Line
-	3100 3100 5000 3100
+	3100 3100 3700 3100
 Wire Wire Line
 	5000 3100 5000 2900
 Wire Wire Line
@@ -2295,14 +2295,7 @@ Wire Wire Line
 	3450 3350 3450 2950
 Connection ~ 3450 3350
 Wire Wire Line
-	3450 3350 3700 3350
-Wire Wire Line
 	3450 2650 3450 2550
-Wire Wire Line
-	3700 3350 3700 2950
-Connection ~ 3700 3350
-Wire Wire Line
-	3700 3350 4600 3350
 Wire Wire Line
 	3700 2650 3700 2550
 Wire Wire Line
@@ -2332,4 +2325,11 @@ F 3 "" H 5600 3800 50  0001 C CNN
 	1    5600 3800
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	3450 3350 4600 3350
+Wire Wire Line
+	3700 2950 3700 3100
+Connection ~ 3700 3100
+Wire Wire Line
+	3700 3100 5000 3100
 $EndSCHEMATC

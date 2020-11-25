@@ -24,43 +24,43 @@ PS2_MISO
 Text HLabel 4100 3000 0    50   Input ~ 0
 PS2_MOSI
 $Comp
-L Connector:Conn_01x08_Male J?
+L Connector:Conn_01x08_Male J9
 U 1 1 5FD08425
 P 6350 3200
-F 0 "J?" H 6458 3681 50  0000 C CNN
+F 0 "J9" H 6458 3681 50  0000 C CNN
 F 1 "Conn_01x08_Male" H 6458 3590 50  0000 C CNN
-F 2 "" H 6350 3200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 6350 3200 50  0001 C CNN
 F 3 "~" H 6350 3200 50  0001 C CNN
 	1    6350 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x08_Male J?
+L Connector:Conn_01x08_Male J8
 U 1 1 5FD09C2F
 P 5550 3200
-F 0 "J?" H 5658 3681 50  0000 C CNN
+F 0 "J8" H 5658 3681 50  0000 C CNN
 F 1 "Conn_01x08_Male" H 5658 3590 50  0000 C CNN
-F 2 "" H 5550 3200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5550 3200 50  0001 C CNN
 F 3 "~" H 5550 3200 50  0001 C CNN
 	1    5550 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x08_Female J?
+L Connector:Conn_01x08_Female J7
 U 1 1 5FD0A29B
 P 4650 3200
-F 0 "J?" H 4678 3176 50  0000 L CNN
+F 0 "J7" H 4678 3176 50  0000 L CNN
 F 1 "Conn_01x08_Female" H 4678 3085 50  0000 L CNN
-F 2 "" H 4650 3200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 4650 3200 50  0001 C CNN
 F 3 "~" H 4650 3200 50  0001 C CNN
 	1    4650 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR021
 U 1 1 5FD0EB01
 P 4100 3200
-F 0 "#PWR?" H 4100 2950 50  0001 C CNN
+F 0 "#PWR021" H 4100 2950 50  0001 C CNN
 F 1 "GND" V 4105 3072 50  0000 R CNN
 F 2 "" H 4100 3200 50  0001 C CNN
 F 3 "" H 4100 3200 50  0001 C CNN
