@@ -1,4 +1,4 @@
-(pcb /home/bench/Documents/personalStuff/boardLayouts/DevBoard/DevBoard.dsn
+(pcb /home/bench/Documents/personalStuff/boardLayouts/DevBoard/DevBoard1.dsn
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -1344,35 +1344,29 @@
     )
   )
   (network
-    (net "Net-(J1-Pad3)"
-      (pins J1-3)
-    )
     (net "Net-(J2-Pad4)"
       (pins J2-4 R3-2)
     )
     (net GND
-      (pins C1-2 C2-2 C3-2 C4-2 C5-1 C6-2 C7-2 C8-1 C9-2 C10-1 D1-1 D2-2 J2-5 J3-2
-        J4-2 J5-4 J6-3 J7-4 J8-4 J9-4 J10-2 J10-5 J10-8 J10-11 J10-16 J10-19 J10-22
-        J10-25 J12-1 J13-1 J14-1 J15-1 J16-1 J17-1 J18-1 J19-1 J20-1 J21-1 J22-1 J23-1
-        J24-1 J25-1 J26-1 J27-1 J28-1 J29-1 J30-1 J31-1 J32-1 R1-2 R3-1 R8-2 R9-2
-        R12-2 R13-2 R14-2 R15-2 R16-2 R17-2 R18-2 R19-2 R20-2 R21-2 SW1-1 U1-12 U1-18
-        U1-31 U1-47 U1-63)
+      (pins C1-2 C2-2 C3-2 C4-2 C5-1 C6-2 C7-2 C8-1 C9-2 C10-1 D1-1 D2-2 J1-3 J2-5
+        J3-2 J4-2 J5-4 J6-3 J7-4 J8-4 J9-4 J10-2 J10-5 J10-8 J10-11 J10-16 J10-19
+        J10-22 J10-25 J12-1 J13-1 J14-1 J15-1 J16-1 J17-1 J18-1 J19-1 J20-1 J21-1
+        J22-1 J23-1 J24-1 J25-1 J26-1 J27-1 J28-1 J29-1 J30-1 J31-1 J32-1 R1-2 R3-1
+        R8-2 R9-2 R12-2 R13-2 R14-2 R15-2 R16-2 R17-2 R18-2 R19-2 R20-2 R21-2 SW1-1
+        U1-12 U1-18 U1-31 U1-47 U1-63)
     )
     (net /NRST
       (pins C1-1 J1-5 SW1-2 U1-7)
     )
     (net G_3.3
-      (pins C2-1 C3-1 C5-2 C8-2 C10-2 FB1-1 J1-1 J3-1 J7-5 J8-5 J9-5 U1-1 U1-19 U1-32
-        U1-48 U1-64 U2-4)
+      (pins C2-1 C3-1 C5-2 C7-1 C8-2 C10-2 FB1-1 J1-1 J3-1 J7-5 J8-5 J9-5 U1-1 U1-19
+        U1-32 U1-48 U1-64 U2-4)
     )
     (net "Net-(C4-Pad1)"
       (pins C4-1)
     )
     (net /VCC_3_3A
       (pins C6-1 C9-1 FB1-2 R2-1 U1-13 U2-2)
-    )
-    (net "Net-(C7-Pad1)"
-      (pins C7-1)
     )
     (net /OPAMP2_VOUT
       (pins C11-1 J11-1 J12-2 J12-3 R10-1 U1-26)
@@ -1696,5 +1690,299 @@
     )
   )
   (wiring
+    (wire (path F.Cu 250  17780 -73040  16779.7 -73040)(net "Net-(J2-Pad4)")(type protect))
+    (wire (path F.Cu 250  22860 -62230  22860 -63355.3  22719.3 -63355.3  16711.8 -69362.8
+            16711.8 -72972.1  16779.7 -73040)(net "Net-(J2-Pad4)")(type protect))
+    (wire (path F.Cu 250  61735 -71615  57173.8 -76176.2  47881.8 -76176.2  47563.1 -76494.9
+            40535.4 -76494.9  33611.2 -69570.7)(net /NRST)(type protect))
+    (wire (path F.Cu 250  65445 -71640  61760 -71640  61735 -71615)(net /NRST)(type protect))
+    (wire (path F.Cu 250  33611.2 -69570.7  33611.2 -66367.3  39133.7 -60844.8  50416.7 -60844.8
+            72871.3 -38390.2  106141 -38390.2)(net /NRST)(type protect))
+    (wire (path B.Cu 250  109220 -62230  109220 -61054.7)(net /NRST)(type protect))
+    (wire (path B.Cu 250  106141 -38390.2  106238 -38486.7  106238 -38486.7  106238 -58072.7
+            109220 -61054.7)(net /NRST)(type protect))
+    (wire (path B.Cu 250  33611.2 -69570.7  22860 -80321.9  22860 -88900)(net /NRST)(type protect))
+    (wire (path F.Cu 250  69228.4 -75361.6  73010.2 -75361.6  74870 -77221.4  74870 -78065)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  68370 -78065  68370 -76220  69228.4 -75361.6  69228.4 -71513
+            69178.6 -71463.2)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  49530 -75412.5  58127.5 -66815  62230 -66815)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  45720 -75705  46012.5 -75412.5  49530 -75412.5)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  67370 -66715  67394.3 -66739.3  67394.3 -67672.6  67498.2 -67776.5
+            67498.2 -69782.8  69178.6 -71463.2)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  41910 -75705  45720 -75705)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  36170 -67310  36170 -69965  41910 -75705)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  102780 -61054.7  107167 -61054.7  107950 -61837.6  107950 -62640.2
+            118471 -73161.2  132184 -73161.2)(net G_3.3)(type protect))
+    (wire (path B.Cu 250  71120 -50800  71120 -51975.3)(net G_3.3)(type protect))
+    (wire (path B.Cu 250  68743.2 -67444.9  69178.6 -67880.3  69178.6 -71463.2)(net G_3.3)(type protect))
+    (wire (path B.Cu 250  64226 -67191.2  64900.6 -67865.8  66406.9 -67865.8  66827.8 -67444.9
+            68743.2 -67444.9)(net G_3.3)(type protect))
+    (wire (path B.Cu 250  71120 -51975.3  70752.6 -51975.3  69944.7 -52783.2  69944.7 -66243.4
+            68743.2 -67444.9)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  62230 -66815  62721.1 -67306.1  64111.1 -67306.1)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  76795 -68640  79175 -68640  80010 -67805)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  65445 -68640  64111.1 -67306.1)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  64226 -67191.2  64111.1 -67306.1)(net G_3.3)(type protect))
+    (wire (path B.Cu 250  132184 -73161.2  133953 -74930  165100 -74930)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  100235 -62230  100235 -61862.6  101043 -61054.7  102780 -61054.7
+            102780 -62725.4  97700.5 -67805  80010 -67805)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  190500 -74930  165100 -74930)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  68370 -78065  68370 -81070  68580 -81280)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  99060 -62230  100235 -62230)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  71120 -50800  72295.3 -50800  86454.7 -50800  97884.7 -62230)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  99060 -62230  97884.7 -62230)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  190500 -74930  205740 -74930)(net G_3.3)(type protect))
+    (wire (path F.Cu 250  49530 -76987.5  60900.3 -76987.5  63247.8 -74640  65445 -74640)(net /VCC_3_3A)(type protect))
+    (wire (path F.Cu 250  45720 -80290  49022.5 -76987.5  49530 -76987.5)(net /VCC_3_3A)(type protect))
+    (wire (path F.Cu 250  41910 -80290  45720 -80290)(net /VCC_3_3A)(type protect))
+    (wire (path F.Cu 250  31295.3 -67310  31295.3 -60505.3  26670 -55880)(net /VCC_3_3A)(type protect))
+    (wire (path F.Cu 250  41910 -80290  31295.3 -69675.3  31295.3 -67310)(net /VCC_3_3A)(type protect))
+    (wire (path F.Cu 250  29870 -67310  31295.3 -67310)(net /VCC_3_3A)(type protect))
+    (wire (path F.Cu 250  113030 -152545  114155 -151419  114155 -108106  85703.2 -79653.5
+            72524.6 -79653.5  71870 -78998.9  71870 -78065)(net /OPAMP2_VOUT)(type protect))
+    (wire (path F.Cu 250  113030 -153670  113030 -152545)(net /OPAMP2_VOUT)(type protect))
+    (wire (path F.Cu 250  91440 -161290  93980 -161290)(net /OPAMP2_VOUT)(type protect))
+    (wire (path B.Cu 250  83820 -151035  91440 -158655  91440 -161290)(net /OPAMP2_VOUT)(type protect))
+    (wire (path B.Cu 250  83820 -149860  83820 -151035)(net /OPAMP2_VOUT)(type protect))
+    (wire (path F.Cu 250  113030 -153670  111905 -153670)(net /OPAMP2_VOUT)(type protect))
+    (wire (path F.Cu 250  103015 -157695  107880 -157695  111905 -153670)(net /OPAMP2_VOUT)(type protect))
+    (wire (path F.Cu 250  93980 -161290  97575 -157695  103015 -157695)(net /OPAMP2_VOUT)(type protect))
+    (wire (path F.Cu 250  103015 -146925  88252.9 -132163  88252.9 -82840.1  85872.9 -80460.1
+            71923.8 -80460.1  70370 -78906.3  70370 -78065)(net /Audio/OPAMP2_VINM)(type protect))
+    (wire (path F.Cu 250  103015 -150075  112935 -150075  113030 -150170)(net /Audio/OPAMP2_VINM)(type protect))
+    (wire (path B.Cu 250  103015 -150075  103015 -146925)(net /Audio/OPAMP2_VINM)(type protect))
+    (wire (path B.Cu 250  66765.5 -83312.8  66765.5 -137886  74930 -146050)(net /Audio/OPAMP1_VINM)(type protect))
+    (wire (path F.Cu 250  65445 -75640  66356.4 -75640  66558.1 -75841.7  66558.1 -76964.1
+            65762.7 -77759.5  65762.7 -82310  66765.5 -83312.8)(net /Audio/OPAMP1_VINM)(type protect))
+    (wire (path B.Cu 250  74930 -146050  74930 -152400)(net /Audio/OPAMP1_VINM)(type protect))
+    (wire (path F.Cu 250  74930 -152400  63810 -152400  63500 -152710)(net /Audio/OPAMP1_VINM)(type protect))
+    (wire (path F.Cu 250  68526.8 -82766.2  68348.1 -82587.5  67057 -82587.5  66213.1 -81743.6
+            66213.1 -79221.9  67370 -78065)(net /Audio/OPAMP1_VOUT)(type protect))
+    (wire (path B.Cu 250  81280 -149860  81280 -148685)(net /Audio/OPAMP1_VOUT)(type protect))
+    (wire (path B.Cu 250  68526.8 -82766.2  68601 -82840.4  68601.1 -82840.4  68601.1 -136006
+            81280 -148685)(net /Audio/OPAMP1_VOUT)(type protect))
+    (wire (path F.Cu 250  63500 -156210  64625.3 -156210)(net /Audio/OPAMP1_VOUT)(type protect))
+    (wire (path F.Cu 250  74930 -160020  68435.3 -160020  64625.3 -156210)(net /Audio/OPAMP1_VOUT)(type protect))
+    (wire (path B.Cu 250  81280 -160020  74930 -160020)(net /Audio/OPAMP1_VOUT)(type protect))
+    (wire (path B.Cu 250  83820 -161290  82550 -160020  81280 -160020  81280 -151035)(net /Audio/OPAMP1_VOUT)(type protect))
+    (wire (path B.Cu 250  81280 -149860  81280 -151035)(net /Audio/OPAMP1_VOUT)(type protect))
+    (wire (path F.Cu 250  83820 -161290  86360 -161290)(net /Audio/OPAMP1_VOUT)(type protect))
+    (wire (path B.Cu 250  34290 -55880  33164.7 -55880  31994.7 -57050  20220 -57050
+            17780 -54610)(net "Net-(D1-Pad2)")(type protect))
+    (wire (path F.Cu 250  32780 -77150  33705.3 -77150)(net /FS_DM)(type protect))
+    (wire (path F.Cu 250  64228.4 -80478.2  63147.7 -81558.9  38114.2 -81558.9  33705.3 -77150)(net /FS_DM)(type protect))
+    (wire (path B.Cu 250  73417.4 -71145.4  64228.4 -80334.4  64228.4 -80478.2)(net /FS_DM)(type protect))
+    (wire (path F.Cu 250  76795 -70640  73922.8 -70640  73417.4 -71145.4)(net /FS_DM)(type protect))
+    (wire (path B.Cu 250  73308.6 -70083.4  72434.5 -70083.4  64175.7 -78342.2)(net /FS_DP)(type protect))
+    (wire (path F.Cu 250  64175.7 -78342.2  61414.7 -81103.2  40443.4 -81103.2  34590.2 -75250
+            32780 -75250)(net /FS_DP)(type protect))
+    (wire (path F.Cu 250  76795 -70140  73365.2 -70140  73308.6 -70083.4)(net /FS_DP)(type protect))
+    (wire (path F.Cu 250  30480 -75250  29554.7 -75250  26694.7 -72390  17780 -72390)(net "Net-(D2-Pad4)")(type protect))
+    (wire (path F.Cu 250  29870 -65010  29870 -63934.7  26995.3 -61060  21255.2 -61060
+            13804.1 -68511.1  13804.1 -76344  14227.3 -76767.2  17388.4 -76767.2
+            17955.6 -76200  30480 -76200)(net "Net-(D2-Pad5)")(type protect))
+    (wire (path F.Cu 250  30480 -77150  31405.3 -77150)(net "Net-(D2-Pad6)")(type protect))
+    (wire (path F.Cu 250  17780 -71740  28355.6 -71740  31405.3 -74789.7  31405.3 -77150)(net "Net-(D2-Pad6)")(type protect))
+    (wire (path F.Cu 250  101600 -62230  97115 -66715  74870 -66715)(net /SWCLK)(type protect))
+    (wire (path F.Cu 250  106680 -62230  105505 -62230)(net /SWDIO)(type protect))
+    (wire (path F.Cu 250  76795 -69640  78146.2 -69640  78649.8 -70143.6  97888.7 -70143.6
+            105505 -62527.6  105505 -62230)(net /SWDIO)(type protect))
+    (wire (path F.Cu 250  111760 -62230  110585 -62230)(net /TRACESWO)(type protect))
+    (wire (path F.Cu 250  71870 -66715  71870 -59225.6  67369.6 -54725.2  67369.6 -50292
+            68090.6 -49571  98293 -49571  110585 -61862.7  110585 -62230)(net /TRACESWO)(type protect))
+    (wire (path F.Cu 250  138430 -147320  139555 -147320  140685 -146190  168770 -146190
+            173990 -140970)(net G_5V)(type protect))
+    (wire (path B.Cu 250  138430 -147320  137305 -147320)(net G_5V)(type protect))
+    (wire (path F.Cu 250  28988.4 -71029.2  28927.6 -71090  17780 -71090)(net G_5V)(type protect))
+    (wire (path F.Cu 250  29870 -70147.6  28988.4 -71029.2  31236.1 -73276.9)(net G_5V)(type protect))
+    (wire (path B.Cu 250  31236.1 -73276.9  31236.1 -88363.5  30573.6 -89026  30573.6 -145411
+            47540.1 -162377  111373 -162377  127556 -146195  136179 -146195
+            137305 -147320)(net G_5V)(type protect))
+    (wire (path F.Cu 250  193177 -142103  203200 -152126  203200 -153670)(net G_5V)(type protect))
+    (wire (path F.Cu 250  193177 -142103  194310 -140970)(net G_5V)(type protect))
+    (wire (path F.Cu 250  173990 -140970  175123 -142103  193177 -142103)(net G_5V)(type protect))
+    (wire (path F.Cu 250  29870 -69610  29870 -70147.6)(net G_5V)(type protect))
+    (wire (path B.Cu 250  173990 -140970  173990 -151130  180340 -157480)(net G_5V)(type protect))
+    (wire (path F.Cu 250  68580 -50800  68580 -51975.3)(net /DebugUartTX)(type protect))
+    (wire (path F.Cu 250  73870 -66715  73870 -58685.6  69755.3 -54570.9  69755.3 -52783.2
+            68947.4 -51975.3  68580 -51975.3)(net /DebugUartTX)(type protect))
+    (wire (path F.Cu 250  68580 -53340  68580 -54515.3)(net /DebugUartRX)(type protect))
+    (wire (path F.Cu 250  73370 -66715  73370 -59305.3  68580 -54515.3)(net /DebugUartRX)(type protect))
+    (wire (path F.Cu 250  66040 -50800  66040 -51975.3)(net /DebugPort1)(type protect))
+    (wire (path F.Cu 250  68870 -66715  68870 -58070.2  64864.7 -54064.9  64864.7 -52783.2
+            65672.6 -51975.3  66040 -51975.3)(net /DebugPort1)(type protect))
+    (wire (path F.Cu 250  66040 -53340  66040 -54515.3)(net /DebugPort2)(type protect))
+    (wire (path F.Cu 250  69870 -66715  69870 -58345.3  66040 -54515.3)(net /DebugPort2)(type protect))
+    (wire (path B.Cu 250  63500 -51975.3  63867.4 -51975.3  64675.3 -52783.2  64675.3 -66514.7
+            65294.9 -67134.3)(net /DebugPort3)(type protect))
+    (wire (path B.Cu 250  63500 -50800  63500 -51975.3)(net /DebugPort3)(type protect))
+    (wire (path F.Cu 250  65445 -69140  66296.1 -69140  66545.7 -68890.4  66545.7 -68385.1
+            65294.9 -67134.3)(net /DebugPort3)(type protect))
+    (wire (path B.Cu 250  63931.9 -69015  63500 -68583.1  63500 -53340)(net /DebugPort4)(type protect))
+    (wire (path F.Cu 250  65445 -69640  64556.9 -69640  63931.9 -69015)(net /DebugPort4)(type protect))
+    (wire (path B.Cu 250  130810 -147320  130810 -148590  135890 -153670)(net "Net-(J4-Pad4)")(type protect))
+    (wire (path F.Cu 250  157480 -147320  152400 -147320  146050 -153670)(net "Net-(J4-Pad5)")(type protect))
+    (wire (path B.Cu 250  166370 -140970  166370 -148844  172720 -155194)(net /Keyboard_CLK)(type protect))
+    (wire (path B.Cu 250  112453 -81280  166370 -135197  166370 -140970)(net /Keyboard_CLK)(type protect))
+    (wire (path F.Cu 250  76795 -76140  102236 -76140  107376 -81280  112453 -81280)(net /Keyboard_CLK)(type protect))
+    (wire (path F.Cu 250  172720 -155194  173736 -156210  190500 -156210)(net /Keyboard_CLK)(type protect))
+    (wire (path F.Cu 250  186690 -140970  185565 -140970)(net /Keyboard_DATA)(type protect))
+    (wire (path F.Cu 250  73370 -78065  73370 -78907.7  73627.9 -79165.6  86542.1 -79165.6
+            147221 -139845  184439 -139845  185565 -140970)(net /Keyboard_DATA)(type protect))
+    (wire (path B.Cu 250  190638 -148728  180753 -158612  176392 -158612  175260 -157480)(net /Keyboard_DATA)(type protect))
+    (wire (path B.Cu 250  186690 -142095  190638 -146043  190638 -148728  198120 -156210)(net /Keyboard_DATA)(type protect))
+    (wire (path B.Cu 250  186690 -140970  186690 -142095)(net /Keyboard_DATA)(type protect))
+    (wire (path B.Cu 250  105628 -75140  119394 -75140  129764 -64770  165100 -64770)(net /PS2_MISO)(type protect))
+    (wire (path F.Cu 250  76795 -75140  105628 -75140)(net /PS2_MISO)(type protect))
+    (wire (path F.Cu 250  190500 -64770  165100 -64770)(net /PS2_MISO)(type protect))
+    (wire (path F.Cu 250  190500 -64770  205740 -64770)(net /PS2_MISO)(type protect))
+    (wire (path F.Cu 250  190500 -67310  189325 -67310)(net /PS2_MOSI)(type protect))
+    (wire (path F.Cu 250  165100 -67897.6  188737 -67897.6  189325 -67310)(net /PS2_MOSI)(type protect))
+    (wire (path F.Cu 250  165100 -67897.6  165100 -68485.3)(net /PS2_MOSI)(type protect))
+    (wire (path F.Cu 250  165100 -67310  165100 -67897.6)(net /PS2_MOSI)(type protect))
+    (wire (path F.Cu 250  165100 -68485.3  164733 -68485.3  163925 -69293.4  163925 -75418.8
+            164706 -76200  165521 -76200  166308 -76987.6  166308 -77933.3
+            165586 -78655.8  123329 -78655.8  119088 -74414.6  91819.8 -74414.6
+            91594.4 -74640  76795 -74640)(net /PS2_MOSI)(type protect))
+    (wire (path F.Cu 250  190500 -67310  205740 -67310)(net /PS2_MOSI)(type protect))
+    (wire (path B.Cu 250  165100 -77470  190500 -77470)(net /PS2_CS)(type protect))
+    (wire (path F.Cu 250  165100 -77470  163925 -77470)(net /PS2_CS)(type protect))
+    (wire (path F.Cu 250  68370 -66715  68370 -62993.4  62323.8 -56947.2  62323.8 -50273.8
+            63481.1 -49116.5  135571 -49116.5  163925 -77470)(net /PS2_CS)(type protect))
+    (wire (path F.Cu 250  190500 -77470  205740 -77470)(net /PS2_CS)(type protect))
+    (wire (path F.Cu 250  76795 -75640  105102 -75640  109472 -80010  163925 -80010)(net /PS2_SCK)(type protect))
+    (wire (path F.Cu 250  165100 -80010  163925 -80010)(net /PS2_SCK)(type protect))
+    (wire (path F.Cu 250  165100 -80010  190500 -80010  205740 -80010)(net /PS2_SCK)(type protect))
+    (wire (path F.Cu 250  70370 -66715  70370 -71635.2  77345.2 -78610.4  96866.2 -78610.4
+            100806 -82550  165100 -82550)(net /PS2_AWK)(type protect))
+    (wire (path F.Cu 250  190500 -82550  165100 -82550)(net /PS2_AWK)(type protect))
+    (wire (path F.Cu 250  190500 -82550  205740 -82550)(net /PS2_AWK)(type protect))
+    (wire (path B.Cu 250  69384.6 -76613.8  76341.8 -69656.6  76341.8 -35678.2  76800 -35220)(net /Audio/ASignal8)(type protect))
+    (wire (path B.Cu 250  35560 -147320  35560 -146195)(net /Audio/ASignal8)(type protect))
+    (wire (path B.Cu 250  69384.6 -76613.8  64610.3 -81388.1  64610.3 -103893  36174.1 -132330
+            35050.5 -132330  33890.5 -133490  33890.5 -135326  32977 -136240
+            32458.5 -136240  31585.1 -137113  31585.1 -143622  32354.2 -144391
+            33755.9 -144391  35560 -146195)(net /Audio/ASignal8)(type protect))
+    (wire (path F.Cu 250  69370 -78065  69370 -76628.4  69384.6 -76613.8)(net /Audio/ASignal8)(type protect))
+    (wire (path B.Cu 250  76800 -35220  72390 -30810  72390 -19685  72390 -15875)(net /Audio/ASignal8)(type protect))
+    (wire (path B.Cu 250  72390 -19685  66040 -19685)(net /Audio/ASignal8)(type protect))
+    (wire (path B.Cu 250  166228 -27787.5  166110 -27787.5  122728 -71169.1  107762 -71169.1
+            95790.1 -83140.6  87527.6 -83140.6)(net /Audio/ASignal6)(type protect))
+    (wire (path B.Cu 250  175300 -34640  168448 -27787.5  166228 -27787.5  166228 -19542.5
+            165782 -19097.3)(net /Audio/ASignal6)(type protect))
+    (wire (path F.Cu 250  65312.4 -84056.5  65312.4 -76272.6  65445 -76140)(net /Audio/ASignal6)(type protect))
+    (wire (path F.Cu 250  35560 -139010  65312.4 -109258  65312.4 -84056.5)(net /Audio/ASignal6)(type protect))
+    (wire (path F.Cu 250  87527.6 -83140.6  86611.7 -84056.5  65312.4 -84056.5)(net /Audio/ASignal6)(type protect))
+    (wire (path B.Cu 250  165782 -19097.3  165100 -18415)(net /Audio/ASignal6)(type protect))
+    (wire (path B.Cu 250  165782 -19097.3  170275 -14605)(net /Audio/ASignal6)(type protect))
+    (wire (path B.Cu 250  171450 -14605  170275 -14605)(net /Audio/ASignal6)(type protect))
+    (wire (path B.Cu 250  63023.4 -73379.8  57639.1 -67995.5  57639.1 -35509.1  57350 -35220)(net /ASignal4)(type protect))
+    (wire (path B.Cu 250  53324.6 -18415  53324.6 -17065.7  53340 -17050.3)(net /ASignal4)(type protect))
+    (wire (path B.Cu 250  57350 -35220  53324.6 -31194.6  53324.6 -18415  46990 -18415)(net /ASignal4)(type protect))
+    (wire (path B.Cu 250  63023.4 -73379.8  54424.2 -81979  54424.2 -102347  35905.8 -120866
+            35446 -120866  34389.6 -121922  34389.6 -129530  35560 -130700)(net /ASignal4)(type protect))
+    (wire (path F.Cu 250  65445 -73640  63283.6 -73640  63023.4 -73379.8)(net /ASignal4)(type protect))
+    (wire (path B.Cu 250  53340 -15875  53340 -17050.3)(net /ASignal4)(type protect))
+    (wire (path B.Cu 250  184150 -18415  179126 -13390.7  70733.1 -13390.7  62300.9 -21822.9
+            62300.9 -70902.9  64046.6 -72648.6)(net /ASignal2)(type protect))
+    (wire (path B.Cu 250  184150 -18415  191195 -18415)(net /ASignal2)(type protect))
+    (wire (path B.Cu 250  64046.6 -72648.6  64046.6 -73459.2  61509.8 -75996  61509.8 -96440.2
+            35560 -122390)(net /ASignal2)(type protect))
+    (wire (path F.Cu 250  65445 -72640  64055.2 -72640  64046.6 -72648.6)(net /ASignal2)(type protect))
+    (wire (path B.Cu 250  191195 -18415  191195 -31884.7  195220 -35910)(net /ASignal2)(type protect))
+    (wire (path B.Cu 250  191770 -17050.3  191195 -17625.6  191195 -18415)(net /ASignal2)(type protect))
+    (wire (path B.Cu 250  191770 -15875  191770 -17050.3)(net /ASignal2)(type protect))
+    (wire (path F.Cu 250  85890.7 -26504.3  94936.4 -35550  96040 -35550)(net /Audio/ASignal7)(type protect))
+    (wire (path F.Cu 250  92710 -17050.3  85890.7 -23869.6  85890.7 -26504.3)(net /Audio/ASignal7)(type protect))
+    (wire (path F.Cu 250  85090 -27305  85890.7 -26504.3)(net /Audio/ASignal7)(type protect))
+    (wire (path B.Cu 250  69972.3 -80535.2  69972.3 -77780.8  76792.2 -70960.9  76792.2 -54797.8
+            96040 -35550)(net /Audio/ASignal7)(type protect))
+    (wire (path B.Cu 250  69972.3 -80535.2  68517.4 -80535.2  66040.2 -83012.4  66040.2 -107351
+            35766.5 -137625  35272.1 -137625  33890.5 -139007  33890.5 -141994
+            32720 -143165)(net /Audio/ASignal7)(type protect))
+    (wire (path F.Cu 250  92710 -15875  92710 -17050.3)(net /Audio/ASignal7)(type protect))
+    (wire (path F.Cu 250  68870 -78065  68870 -79432.9  69972.3 -80535.2)(net /Audio/ASignal7)(type protect))
+    (wire (path B.Cu 250  56367.5 -78115.4  53565.5 -80917.4  53565.5 -91022.9  33939.2 -110649
+            33939.2 -118619  33197.9 -119360  32696.8 -119360  31594.6 -120463
+            31594.6 -133730  32720 -134855)(net /Audio/ASignal5)(type protect))
+    (wire (path B.Cu 250  56879 -78115.4  56367.5 -78115.4  56367.5 -65743.9)(net /Audio/ASignal5)(type protect))
+    (wire (path F.Cu 250  65445 -75140  64591.6 -75140  61616.2 -78115.4  56879 -78115.4)(net /Audio/ASignal5)(type protect))
+    (wire (path F.Cu 250  143061 -21403.9  140571 -21403.9  122860 -39115.5  72845.2 -39115.5
+            56188.5 -55772.2  56188.5 -65564.9  56367.5 -65743.9)(net /Audio/ASignal5)(type protect))
+    (wire (path F.Cu 250  143061 -21403.9  155870 -34212.8  155870 -34860)(net /Audio/ASignal5)(type protect))
+    (wire (path F.Cu 250  146050 -18415  143061 -21403.9)(net /Audio/ASignal5)(type protect))
+    (wire (path F.Cu 250  146050 -18415  146145 -18415  149955 -14605)(net /Audio/ASignal5)(type protect))
+    (wire (path F.Cu 250  151130 -14605  149955 -14605)(net /Audio/ASignal5)(type protect))
+    (wire (path B.Cu 250  75616.5 -45064.9  75616.5 -66113.1  68599.6 -73130  67350.8 -73130
+            63346.4 -77134.4  63346.4 -104509  35976.1 -131879  35084.9 -131879
+            33939.2 -130734  33939.2 -127764  32720 -126545)(net /ASignal3)(type protect))
+    (wire (path F.Cu 250  75616.5 -45064.9  173781 -45064.9  200431 -18415  203200 -18415)(net /ASignal3)(type protect))
+    (wire (path F.Cu 250  65445 -73140  67340.8 -73140  67350.8 -73130)(net /ASignal3)(type protect))
+    (wire (path B.Cu 250  209720 -18415  209720 -18149.9  210820 -17050.3)(net /ASignal3)(type protect))
+    (wire (path B.Cu 250  213750 -36000  209720 -31970.4  209720 -18415  203200 -18415)(net /ASignal3)(type protect))
+    (wire (path B.Cu 250  210820 -15875  210820 -17050.3)(net /ASignal3)(type protect))
+    (wire (path B.Cu 250  56913.8 -64213.8  56893.1 -64193.1  37900 -64193.1)(net /ASignal1)(type protect))
+    (wire (path F.Cu 250  65445 -72140  66292.5 -72140  66996.1 -71436.4  66996.1 -67911.3
+            66944 -67859.2  66944 -67659  63498.8 -64213.8  56913.8 -64213.8)(net /ASignal1)(type protect))
+    (wire (path B.Cu 250  37900 -64193.1  37900 -98834  31589.3 -105145  31589.3 -117104
+            32720 -118235)(net /ASignal1)(type protect))
+    (wire (path B.Cu 250  37900 -35220  37900 -64193.1)(net /ASignal1)(type protect))
+    (wire (path F.Cu 250  27499.3 -21784.3  37900 -32185  37900 -35220)(net /ASignal1)(type protect))
+    (wire (path F.Cu 250  34290 -15875  33114.7 -15875)(net /ASignal1)(type protect))
+    (wire (path F.Cu 250  27499.3 -21784.3  33114.7 -16168.9  33114.7 -15875)(net /ASignal1)(type protect))
+    (wire (path F.Cu 250  27499.3 -21784.3  25400 -19685)(net /ASignal1)(type protect))
+    (wire (path F.Cu 250  34140 -154250  34140 -107150)(net "Net-(J10-Pad0)")(type protect))
+    (wire (path B.Cu 250  85295.4 -81955.5  93707.2 -81955.5  137200 -38462.7  137200 -34970)(net /Audio/ASignal9)(type protect))
+    (wire (path F.Cu 250  69870 -78065  69870 -79069  72906.8 -82105.8  85145.1 -82105.8
+            85295.4 -81955.5)(net /Audio/ASignal9)(type protect))
+    (wire (path B.Cu 250  137200 -34970  133175 -30944.6  133175 -18415  133175 -16260.7
+            133350 -16085.3)(net /Audio/ASignal9)(type protect))
+    (wire (path B.Cu 250  133175 -18415  125730 -18415)(net /Audio/ASignal9)(type protect))
+    (wire (path B.Cu 250  133350 -14910  133350 -16085.3)(net /Audio/ASignal9)(type protect))
+    (wire (path B.Cu 250  111937 -31568.9  77278.1 -66227.8  77278.1 -71779.1  73035.5 -76021.7
+            73035.5 -76587)(net /ASignal10)(type protect))
+    (wire (path B.Cu 250  111937 -31568.9  111937 -21175.3  110447 -19685)(net /ASignal10)(type protect))
+    (wire (path B.Cu 250  116010 -35060  112519 -31568.9  111937 -31568.9)(net /ASignal10)(type protect))
+    (wire (path F.Cu 250  70870 -78065  70870 -77222.3  71505.3 -76587  73035.5 -76587)(net /ASignal10)(type protect))
+    (wire (path B.Cu 250  110447 -19685  110447 -19633.6  113030 -17050.3)(net /ASignal10)(type protect))
+    (wire (path B.Cu 250  110447 -19685  105410 -19685)(net /ASignal10)(type protect))
+    (wire (path B.Cu 250  113030 -15875  113030 -17050.3)(net /ASignal10)(type protect))
+    (wire (path B.Cu 250  68401.9 -68216.5  68401.9 -69974.6  62250 -76126.5  62250 -90390.5)(net "Net-(R1-Pad1)")(type protect))
+    (wire (path F.Cu 250  62250 -90390.5  50579.5 -90390.5  48260 -92710)(net "Net-(R1-Pad1)")(type protect))
+    (wire (path F.Cu 250  69370 -66715  69370 -67603  68756.5 -68216.5  68401.9 -68216.5)(net "Net-(R1-Pad1)")(type protect))
+    (wire (path B.Cu 250  74921.7 -75161.2  147080 -147320  149860 -147320)(net /MIDI_UART)(type protect))
+    (wire (path F.Cu 250  72870 -66715  72870 -69328.1  72526.5 -69671.6  72526.5 -72766
+            74921.7 -75161.2)(net /MIDI_UART)(type protect))
+    (via "Via[0-1]_800:400_um"  106141 -38390.2 (net /NRST)(type protect))
+    (via "Via[0-1]_800:400_um"  33611.2 -69570.7 (net /NRST)(type protect))
+    (via "Via[0-1]_800:400_um"  64226 -67191.2 (net G_3.3)(type protect))
+    (via "Via[0-1]_800:400_um"  69178.6 -71463.2 (net G_3.3)(type protect))
+    (via "Via[0-1]_800:400_um"  132184 -73161.2 (net G_3.3)(type protect))
+    (via "Via[0-1]_800:400_um"  66765.5 -83312.8 (net /Audio/OPAMP1_VINM)(type protect))
+    (via "Via[0-1]_800:400_um"  68526.8 -82766.2 (net /Audio/OPAMP1_VOUT)(type protect))
+    (via "Via[0-1]_800:400_um"  64228.4 -80478.2 (net /FS_DM)(type protect))
+    (via "Via[0-1]_800:400_um"  73417.4 -71145.4 (net /FS_DM)(type protect))
+    (via "Via[0-1]_800:400_um"  64175.7 -78342.2 (net /FS_DP)(type protect))
+    (via "Via[0-1]_800:400_um"  73308.6 -70083.4 (net /FS_DP)(type protect))
+    (via "Via[0-1]_800:400_um"  31236.1 -73276.9 (net G_5V)(type protect))
+    (via "Via[0-1]_800:400_um"  65294.9 -67134.3 (net /DebugPort3)(type protect))
+    (via "Via[0-1]_800:400_um"  63931.9 -69015 (net /DebugPort4)(type protect))
+    (via "Via[0-1]_800:400_um"  112453 -81280 (net /Keyboard_CLK)(type protect))
+    (via "Via[0-1]_800:400_um"  105628 -75140 (net /PS2_MISO)(type protect))
+    (via "Via[0-1]_800:400_um"  69384.6 -76613.8 (net /Audio/ASignal8)(type protect))
+    (via "Via[0-1]_800:400_um"  87527.6 -83140.6 (net /Audio/ASignal6)(type protect))
+    (via "Via[0-1]_800:400_um"  63023.4 -73379.8 (net /ASignal4)(type protect))
+    (via "Via[0-1]_800:400_um"  64046.6 -72648.6 (net /ASignal2)(type protect))
+    (via "Via[0-1]_800:400_um"  69972.3 -80535.2 (net /Audio/ASignal7)(type protect))
+    (via "Via[0-1]_800:400_um"  56879 -78115.4 (net /Audio/ASignal5)(type protect))
+    (via "Via[0-1]_800:400_um"  56367.5 -65743.9 (net /Audio/ASignal5)(type protect))
+    (via "Via[0-1]_800:400_um"  75616.5 -45064.9 (net /ASignal3)(type protect))
+    (via "Via[0-1]_800:400_um"  67350.8 -73130 (net /ASignal3)(type protect))
+    (via "Via[0-1]_800:400_um"  56913.8 -64213.8 (net /ASignal1)(type protect))
+    (via "Via[0-1]_800:400_um"  85295.4 -81955.5 (net /Audio/ASignal9)(type protect))
+    (via "Via[0-1]_800:400_um"  73035.5 -76587 (net /ASignal10)(type protect))
+    (via "Via[0-1]_800:400_um"  62250 -90390.5 (net "Net-(R1-Pad1)")(type protect))
+    (via "Via[0-1]_800:400_um"  68401.9 -68216.5 (net "Net-(R1-Pad1)")(type protect))
+    (via "Via[0-1]_800:400_um"  74921.7 -75161.2 (net /MIDI_UART)(type protect))
   )
 )

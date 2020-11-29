@@ -1,0 +1,88 @@
+
+(rules PCB DevBoard1
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1262)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.4)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND "Net-(J2-Pad4)" /NRST "G_3.3" "Net-(C4-Pad1)" "/VCC_3_3A" "/OPAMP2_VOUT" "/Audio/OPAMP2_VINM"
+    "/Audio/OPAMP1_VINM" "/Audio/OPAMP1_VOUT" "Net-(D1-Pad2)" "/FS_DM" "/FS_DP" "Net-(D2-Pad4)" "Net-(D2-Pad5)" "Net-(D2-Pad6)"
+    /SWCLK /SWDIO /TRACESWO "G_5V" /DebugUartTX /DebugUartRX /DebugPort1 /DebugPort2
+    /DebugPort3 /DebugPort4 "Net-(J4-Pad4)" "Net-(J4-Pad1)" "Net-(J4-Pad5)" "Net-(J4-Pad3)" "Net-(J5-Pad3)" "/Keyboard_CLK"
+    "/Keyboard_DATA" "Net-(J6-Pad6)" "Net-(J6-Pad2)" "/PS2_MISO" "/PS2_MOSI" "Net-(J7-Pad3)" "/PS2_CS" "/PS2_SCK"
+    "/PS2_AWK" "Net-(J8-Pad3)" "Net-(J9-Pad3)" /Audio/ASignal8 "Net-(J10-Pad3)" /Audio/ASignal6 "Net-(J10-Pad6)" /ASignal4
+    "Net-(J10-Pad9)" /ASignal2 "Net-(J10-Pad12)" "Net-(J10-Pad13)" "Net-(J10-Pad14)" /Audio/ASignal7 "Net-(J10-Pad17)" /Audio/ASignal5
+    "Net-(J10-Pad20)" /ASignal3 "Net-(J10-Pad23)" /ASignal1 "Net-(J10-Pad0)" "Net-(J13-Pad3)" "Net-(J13-Pad4)" "Net-(J15-Pad3)"
+    "Net-(J15-Pad4)" "Net-(J17-Pad4)" "Net-(J17-Pad3)" "Net-(J19-Pad4)" "Net-(J19-Pad3)" "Net-(J21-Pad4)" "Net-(J21-Pad3)" "Net-(J23-Pad3)"
+    "Net-(J23-Pad4)" "Net-(J25-Pad4)" "Net-(J25-Pad3)" "Net-(J27-Pad3)" "Net-(J27-Pad4)" "Net-(J29-Pad4)" /Audio/ASignal9 "Net-(J29-Pad3)"
+    "Net-(J31-Pad3)" /ASignal10 "Net-(J31-Pad4)" "Net-(R1-Pad1)" "/MIDI_UART" "Net-(U1-Pad4)" "Net-(U1-Pad5)" "Net-(U1-Pad6)"
+    "Net-(U1-Pad25)" "Net-(U1-Pad27)" "Net-(U1-Pad28)" "Net-(U1-Pad30)" "Net-(U1-Pad37)" "Net-(U1-Pad38)" "Net-(U1-Pad39)" "Net-(U1-Pad40)"
+    "Net-(U1-Pad41)" "Net-(U1-Pad42)" "Net-(U1-Pad43)" "Net-(U1-Pad50)" "Net-(U1-Pad54)" "Net-(U1-Pad56)" "Net-(U1-Pad57)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

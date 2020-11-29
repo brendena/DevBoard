@@ -281,7 +281,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 850  2200 1400
 Wire Wire Line
-	2400 850  2400 2250
+	2400 850  2400 2100
 $Comp
 L pspice:CAP C2
 U 1 1 5FBE06C3
@@ -319,7 +319,7 @@ F 3 "~" H 2000 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2300 850  2300 2250
+	2300 850  2300 1750
 $Comp
 L pspice:CAP C7
 U 1 1 5FBE3764
@@ -988,14 +988,24 @@ F 3 "~" H 9700 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5FC5D45C
 P 5550 1250
-F 0 "#PWR?" H 5550 1000 50  0001 C CNN
+F 0 "#PWR0101" H 5550 1000 50  0001 C CNN
 F 1 "GND" V 5555 1122 50  0000 R CNN
 F 2 "" H 5550 1250 50  0001 C CNN
 F 3 "" H 5550 1250 50  0001 C CNN
 	1    5550 1250
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	2350 2100 2400 2100
+Connection ~ 2400 2100
+Wire Wire Line
+	2400 2100 2400 2250
+Wire Wire Line
+	2250 1750 2300 1750
+Connection ~ 2300 1750
+Wire Wire Line
+	2300 1750 2300 2250
 $EndSCHEMATC
